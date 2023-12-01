@@ -1,12 +1,16 @@
 package de.nils.command;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class CommandManager {
 
-    ArrayList<ICommand> commands = new ArrayList<ICommand>();
+    @Getter
+    private List<ICommand> commands = new ArrayList<>();
 
-    public void registerCommand(ICommand command) {
+    public void register(ICommand command) {
         commands.add(command);
     }
 }
