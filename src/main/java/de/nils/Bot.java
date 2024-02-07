@@ -26,7 +26,7 @@ public class Bot {
 
         commandManager.register(new de.nils.command.commands.HelloCommand());
 
-        builder = JDABuilder.createDefault("MTE3OTM3MzI3ODMzMTE0NjI2MA.GYvaUk.r4lw0hNqEYautqsNfTn3ULslV5ku96cb1YF_OY")
+        builder = JDABuilder.createDefault("")
                         .addEventListeners(new SlashCommandListener())
                         .setAutoReconnect(true)
                         .setStatus(OnlineStatus.ONLINE)
